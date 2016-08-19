@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Koha search widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-18 21:54+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Camille Bissuel <cbissuel@yagraph.org>\n"
+"Language-Team: Camille Bissuel <cbissuel@yagraph.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_c\n"
+"X-Poedit-Basepath: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/\n"
+"X-Poedit-SearchPath-0: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget\n"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:47
+msgid "Easily adds a Koha Search Box to your blog"
+msgstr "Ajoutez facilement un formulaire de recherche Koha sur votre blog"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:53
+msgid "Koha Search"
+msgstr "Recherche Koha"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:78
+msgid "Keyword"
+msgstr "Mot-clé"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:79
+msgid "Title"
+msgstr "Titre"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:80
+msgid "Author"
+msgstr "Auteur"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:81
+msgid "Subject"
+msgstr "Sujet"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:82
+msgid "ISBN"
+msgstr "ISBN"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:83
+msgid "Series"
+msgstr "Série"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:84
+msgid "Call Number"
+msgstr "Numéro d'appel"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:86
+msgid "Search"
+msgstr "Rechercher"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:116
+msgid "Catalog Search"
+msgstr "Rechercher dans le catalogue"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:116
+msgid "http://catalog.nexpresslibrary.org"
+msgstr "http://catalog.nexpresslibrary.org"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:121
+msgid "Title:"
+msgstr "Titre :"
+
+#: /home/yagraph/Crea/SciencesPo/web/plugins/koha-search-widget/koha-search.php:127
+msgid "URL of your catalog (ex: http://catalog.nexpresslibrary.org):"
+msgstr "Adresse URL de votre catalogue (ex: http://catalog.nexpresslibrary.org) :"
+

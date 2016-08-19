@@ -1,0 +1,166 @@
+<?php
+# Programmer: Jose Mari Caballa Rey
+# Date Created: 24 June 2016
+# Description: To create a customized theme for the RODERICK HALL COLLECTION webiste
+# File Type: PHP file
+# File Name: header.php
+# Location: ../rhctheme/header.php
+?>
+<html <?php language_attributes(); ?>>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="<?php bloginfo('name')?>" />
+    <?php wp_head('rhctheme'); ?>
+    <title><?php bloginfo('name'); ?> | <?php the_title(); ?></title>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico?<?php echo date('l js \of F Y h:i:s A'); ?>">
+     <script type="text/javascript">
+      $(document).ready(function(){
+          $('#test').BootSideMenu({side:"left", autoClose:false});
+          $('#test2').BootSideMenu({side:"right"});
+      });
+      </script>
+      <script>
+      $('.carousel').carousel({
+          interval: 5000 //changes the speed
+      })
+      </script>
+  </head>
+  <body>
+<?php ############################ START OF BODY AND HTML ############################ ?>
+
+<?php #---------------------------------- begin header and sidebar ---------------------------------- ?>
+<nav class="navbar navbar-default rhc-nav navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="header">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand navbar-brand-centered">
+          <div class="animated pulse">
+          <a class="" href="<?php echo get_option('home'); ?>">
+            <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo.png">
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- /Brand and toggle get grouped for better mobile display -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <button class="rhc-menu" id="rhc-menu">
+              <span class="fa fa-bars fa-lg fa-menu white"></span>&nbsp;<strong class="menu">MENU</strong>
+            </button>
+          </li>
+        </ul>
+
+
+        <button type="button" class="btn  navbar-nav btn-rhc"><b>DONATE</b></button>
+
+        <div class="social-media">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-facebook fa-lg white"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-lg white"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin fa-lg white"></i></a></li>
+          </ul>
+        </div>
+
+
+
+
+
+        <!-- <div class="donate-button">
+          <button type="button" class="btn btn-rhc navbar-btn navbar-right">DONATE</button>
+        </div> -->
+      </div><!-- /.navbar-collapse -->
+      <!-- /Collect the nav links, forms, and other content for toggling -->
+    </div>
+  </div>
+
+ 
+    
+  <!--Test -->
+  <div class="container sidebar sidebar-left" style="left:-330px;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-side="left">
+        <div class="side-main-menu">
+          <ul id="" class="nav">
+            <li><a href="">IMAGES</a></li>
+            <li><a href="">VIDEOS</a></li>
+            <li><a href="">ARTICLES</a></li>
+            <li><a href="">US ARMY PUBLICATIONS</a></li>
+            <li><a href="">ONLINE RESOURCES</a>
+               <div class="submenu submenu-left">
+                  <div class="sub-main-menu">
+                    <ul id="" class="nav">
+                      <li><a href="">IMAGES</a></li>
+                      <li><a href="">VIDEOS</a></li>
+                      <li><a href="">ARTICLES</a></li>
+                      <li><a href="">US ARMY PUBLICATIONS</a></li>
+                      <li><a href="">ONLINE RESOURCES</a>
+                      </li>
+                      <li><a href="">CONTACT US</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+
+      <hr>
+
+      <div class="social-media">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><i class="fa fa-facebook fa-lg white"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-lg white"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-lg white"></i></a></li>
+        </ul>
+      </div>
+
+      <button type="submit" class="btn  btn-rhc"><b>DONATE</b></button>
+      <br>
+      <button id="btn-sub" class="btn  btn-rhc"><b>TEST SUBMENU</b></button>
+      </div>
+    </div>
+  </div>
+  <!--/Test -->
+</nav>
+<?php #---------------------------------- end header and sidebar ------------------------------------ ?>
+
+<?php #---------------------------------- begin search bar ---------------------------------- ?>
+<div class="search-bar">
+  <div class="<?php echo (is_front_page()) ? 'search-bar-bg' : 'search-bar-only'; ?>">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <?php dynamic_sidebar( 'search-widget' ); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php #------------------------------------- end search bar ---------------------------------- ?>
+
+
+<?php #---------------------------------- begin search bar ---------------------------------- ?>
+<div class="search-bar">
+  <div class="<?php echo (is_front_page()) ? 'search-bar-bg animated fadein' : 'search-bar-only'; ?>">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <?php dynamic_sidebar( 'search-widget' ); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php #------------------------------------- end search bar ---------------------------------- ?>
