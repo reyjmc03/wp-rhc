@@ -147,6 +147,8 @@ function rhctheme_scripts() {
  	wp_enqueue_style( 'rhctheme-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
  	/* jquery datatables css */
  	wp_enqueue_style( 'jquery-dataTables', get_template_directory_uri() . '/css/jquery.dataTables.min.css' ); 
+ 	/* zebra pagination stylesheet */
+ 	//wp_enqueue_style( 'zebra-pagination-stylesheet', get_template_directory_uri() . '/php/zebra/public/css/zebra_pagination.css');
  	/* bootsidemenu stylesheet */
  	wp_enqueue_style( 'rhctheme-bootsidemenu', get_template_directory_uri() . '/css/bootsidemenu.css' );
  	/* submenu stylesheet */
@@ -192,3 +194,5 @@ add_action( 'wp_enqueue_scripts', 'rhctheme_scripts' );
  * Load custom nav walker
  */
 require get_template_directory() . '/php/navwalker.php';
+
+

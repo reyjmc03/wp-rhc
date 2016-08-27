@@ -1,3 +1,4 @@
+
 ## The Roderick Hall Collection Wordpress Theme Template and Plugins
 
 Authored by: Jose Mari Caballa Rey<br/>
@@ -15,6 +16,7 @@ To developed a customized wordpress website for the Roderick Hall Collection. "T
 | Date Commit  | Time Commit | Project Issues |
 | :---: | :---: | :--- |
 |  20 August 2016  | 06:38 | first official repository commit.  |
+|  28 August 2016  | 04:33 | updated commit - improving theming and backend. |
 
 
 

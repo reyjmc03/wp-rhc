@@ -4,27 +4,30 @@
   */
 ?>
 
-<?php 
-include(locate_template('kohadb.php')); 
 
-//$query = 'SELECT COUNT("bilionumber") AS bibliocount FROM biblioimages LIMIT 100';
+<?php
+require ('php/kohadb.php'); // koha connection string
+
 $query = '
 SELECT biblio.*, biblioimages.* 
 FROM biblio 
 	JOIN biblioimages
 		ON biblioimages.biblionumber = biblio.biblionumber
-LIMIT 100
+LIMIT 1000
 ';
 
 $rows = $lib_db->get_results($query);
 
-$n = '50';
 $collection_name = 'Newsletters';
 ?>
 
+
+
 <?php get_header(); ?>
-<?php include(locate_template('dynamic-browse.php')); ?>
+<?php include(locate_template('/php/dynamic-pages/dynamic-browse.php')); ?>
 <?php get_footer(); ?>
+
+
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -37,6 +40,7 @@ $(document).ready(function() {
       orderable: false
     }],
     pageLength: 5,
+    bSortClasses: false
   });
 });
 </script>

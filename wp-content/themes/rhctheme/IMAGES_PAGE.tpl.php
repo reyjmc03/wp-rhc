@@ -5,13 +5,24 @@
 ?>
 
 <?php 
+require ('php/kohadb.php'); // koha connection string
 
-$n = '100';
+$query = '
+SELECT biblio.*, biblioimages.* 
+FROM biblio 
+  JOIN biblioimages
+    ON biblioimages.biblionumber = biblio.biblionumber
+LIMIT 1000
+';
+
+$rows = $lib_db->get_results($query);
+
+
 $collection_name = 'Images';
 ?>
 
 <?php get_header(); ?>
-<?php include(locate_template('dynamic-browse.php')); ?>
+<?php include(locate_template('/php/dynamic-pages/dynamic-browse.php')); ?>
 <?php get_footer(); ?>
 
 <script type="text/javascript">

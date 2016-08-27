@@ -5,26 +5,27 @@
 ?>
 
 <?php 
-include('kohadb.php'); 
+require ('php/kohadb.php'); // koha connection string
 
-//$query = 'SELECT COUNT("bilionumber") AS bibliocount FROM biblioimages LIMIT 100';
 $query = '
 SELECT biblio.*, biblioimages.* 
 FROM biblio 
-	JOIN biblioimages
-		ON biblioimages.biblionumber = biblio.biblionumber
-LIMIT 100
+  JOIN biblioimages
+    ON biblioimages.biblionumber = biblio.biblionumber
+LIMIT 1000
 ';
+
 $rows = $lib_db->get_results($query);
 
-$n = '50';
 $collection_name = 'Online Resources';
 ?>
 
 
 <?php get_header(); ?>
-<?php include(locate_template('dynamic-browse.php')); ?>
+<?php include(locate_template('/php/dynamic-pages/dynamic-browse.php')); ?>
 <?php get_footer(); ?>
+
+
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -37,6 +38,7 @@ $(document).ready(function() {
       orderable: false
     }],
     pageLength: 5,
+    bSortClasses: false
   });
 });
 </script>

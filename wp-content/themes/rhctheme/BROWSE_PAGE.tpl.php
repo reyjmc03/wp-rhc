@@ -5,7 +5,7 @@
 ?>
 
 <?php 
-include('kohadb.php'); 
+require ('php/kohadb.php'); // koha connection string
 
 //$query = 'SELECT COUNT("bilionumber") AS bibliocount FROM biblioimages LIMIT 100';
 $query = '
@@ -25,6 +25,7 @@ $n = '50';
 /* recently added in browse page*/
 .page .tc-recently-added {
 	background-color: #e2e2e2 !important;
+  min-height: 186px;
 }
 
 .page .tc-recently-added .header {
@@ -41,6 +42,57 @@ $n = '50';
 	margin-top: 30px;
 	margin-bottom: 40px;
 }
+
+.page .tc-recently-added 
+.recently-added-panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.page .tec-recently-added 
+.recently-added-panel span {
+  margin-right: 10px;
+}
+
+.page .tc-recently-added 
+.recently-added-panel span img {
+  width: 160px;
+  height: 186px;
+}
+
+.page .tc-recently-added 
+.recently-added-panel span h5 {
+  font-size: 19px;
+  color: #ff6600;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-right: 10px;
+
+  /*-o-text-overflow: ellipsis;*/   /* Opera */
+   /* text-overflow:    ellipsis*/;   /* IE, Safari (WebKit) */
+  /*  overflow:hidden;  */            /* don't show excess chars */
+    /*white-space:nowrap*/;           /* force single line */
+}
+
+.page .tc-recently-added 
+.recently-added-panel span p {
+  font-size: 14px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;   /* Opera */
+  text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+  height: 90px;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+
+.page .tc-recently-added 
+.recently-added-panel span a {
+  font-size: 18px !important;
+  margin-right: 10px;
+}
+
+
 </style>
 
 <?php get_header(); ?>
@@ -55,26 +107,53 @@ $n = '50';
       </div>
       <div class="row">
   			<div class="col-md-4 col-sm-12">
-          <div class="panel panel-default text-center panel-collections">
-          	<div class="panel-heading pc-heading">
-              <span>
-                <img class="img-responsive" src="http://localhost/rhc/wp-content/themes/rhctheme/images/collection-1.jpg">
+          <div class="recently-added-panel">
+              <span> 
+                <img class="img-responsive" src="http://placehold.it/160X186" align="left">
+                <h5>To inspire and To Lead</h5>
+                <p>
+                  The letters of Gen. Vicente Lim detailing his views on the Philippine defense
+                  and the Philippine Army, errors being made by MacArthur and other issues.
+                </p>
+                <div align="right">
+                   <a href="http://localhost/rhc/the-collections/dvds" class="pcb-link">View item <i class="fa fa-arrow-right"></i></a>
+                </div>
               </span>
-            </div>
-
-            <div class="panel-body pc-body">
-              <p class="pcb-header">Images</p>
-              <p class="pcb-content">
-             	</p>
-              <div class="pcb-link">
-              	<a href="http://localhost/rhc/the-collections/images" class="pcb-link">View collection <i class="fa fa-arrow-right"></i></a>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="recently-added-panel">
+              <span> 
+                <img class="img-responsive" src="http://placehold.it/160X186" align="left">
+                <h5>To inspire and To Lead</h5>
+                <p>
+                  The letters of Gen. Vicente Lim detailing his views on the Philippine defense
+                  and the Philippine Army, errors being made by MacArthur and other issues.
+                </p>
+                <div align="right">
+                   <a href="http://localhost/rhc/the-collections/dvds" class="pcb-link">View item <i class="fa fa-arrow-right"></i></a>
+                </div>
+              </span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="recently-added-panel">
+              <span> 
+                <img class="img-responsive" src="http://placehold.it/160X186" align="left">
+                <h5>To inspire and To Lead</h5>
+                <p>
+                  The letters of Gen. Vicente Lim detailing his views on the Philippine defense
+                  and the Philippine Army, errors being made by MacArthur and other issues.
+                </p>
+                <div align="right">
+                   <a href="http://localhost/rhc/the-collections/dvds" class="pcb-link">View item <i class="fa fa-arrow-right"></i></a>
+                </div>
+              </span>
           </div>
         </div>
 
 
-        <div class="col-md-4 col-sm-12">
+       <!--  <div class="col-md-4 col-sm-12">
           <div class="panel panel-default text-center panel-collections">
           	<div class="panel-heading pc-heading">
               <span>
@@ -91,9 +170,9 @@ $n = '50';
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-md-4 col-sm-12">
+        <!-- <div class="col-md-4 col-sm-12">
           <div class="panel panel-default text-center panel-collections">
           	<div class="panel-heading pc-heading">
               <span>
@@ -110,7 +189,7 @@ $n = '50';
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
   		</div>
     </div>

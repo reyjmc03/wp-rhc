@@ -38,6 +38,10 @@ body {
   border-radius: 5px;
 }
 
+.header a .btn-rhc b {
+  margin-top:40px;
+}
+
 .btn-rhc-search {
   color: #fff;
   background-color: #ff6600;
@@ -266,6 +270,7 @@ body {
 .header .btn-rhc {
   width: 140px !important;
   height: 40px !important;
+  padding-top: 10px;
   float: right;
   display: block;
 }
@@ -322,6 +327,7 @@ body {
 .sidebar .btn-rhc {
   width: 140px !important;
   height: 40px !important;
+  padding-top: 10px;
   margin-left: 110px;
 
 }

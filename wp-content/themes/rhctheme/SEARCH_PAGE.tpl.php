@@ -5,12 +5,17 @@
 ?>
 
 <?php
-include('kohadb.php');
+require ('php/kohadb.php'); // koha connection string
 
-$query = 'SELECT upperagelimit FROM categories';
-$rows = $lib_db->get_results("SELECT upperagelimit FROM categories");
+$query = '
+SELECT biblio.*, biblioimages.* 
+FROM biblio 
+  JOIN biblioimages
+    ON biblioimages.biblionumber = biblio.biblionumber
+LIMIT 1000
+';
 
-$n = '100';
+$rows = $lib_db->get_results($query);
 ?>
 
 
@@ -41,8 +46,8 @@ $n = '100';
                         </tr>
                     </thead>
                     <tbody>
-                        <?php //foreach ($rows as $obj): ?>
-                        <?php for ($i=0; $i < $n; $i++): ?>
+                        <?php foreach ($rows as $obj): ?>
+                        <?php //for ($i=0; $i < $n; $i++): ?>
                         <tr>
                             <td>
                                 <div class="bst-row">
@@ -50,13 +55,14 @@ $n = '100';
                                         <div class="col-lg-3 nogap">
                                             <div class="bstr-image">
                                                 <a href="portfolio-item.html">
-                                  <img class="img-responsive img-hover" src="http://placehold.it/206x224" alt="">
+                                  <!-- <img class="img-responsive img-hover" src="http://placehold.it/206x224" alt=""> -->
+                                  <?php echo '<img class="img-responsive img-hover" width="206" height="224" src="data:image/jpeg;base64,'.base64_encode($obj->thumbnail).'"/>'; ?>
                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-lg-9 nogap">
                                             <div class="bstr-det">
-                                                <h3 class="book-title">NIHONGUN NO HORYO SEISAKU <span>Utsumi Aiko</span></h3>
+                                                <h3 class="book-title"><?php echo $obj->title; ?> <span><?php echo $obj->author; ?></span></h3>
                                                 
                                                 <p class="link"><a href="/items/show/1763" class="permalink"><?php //echo $obj->upperagelimit; ?>test test test test test test test test test test test test test test test test test test test test test</a></p>
                                                 
@@ -70,8 +76,8 @@ $n = '100';
                                 </div>
                             </td>
                         </tr>
-                        <?php endfor; ?>
-                        <?php //endforeach; ?>
+                        <?php //endfor; ?>
+                        <?php endforeach; ?>
 
                     </tbody>
                 </table>

@@ -5,12 +5,18 @@
 ?>
 
 <?php
-include('kohadb.php');
+require ('php/kohadb.php'); // koha connection string
 
-$query = 'SELECT upperagelimit FROM categories';
-$rows = $lib_db->get_results("SELECT upperagelimit FROM categories");
+$query = '
+SELECT biblio.*, biblioimages.* 
+FROM biblio 
+  JOIN biblioimages
+    ON biblioimages.biblionumber = biblio.biblionumber
+LIMIT 2
+';
 
-$n = '2';
+$rows = $lib_db->get_results($query);
+
 ?>
 
 <?php get_header(); ?>
@@ -289,8 +295,8 @@ $n = '2';
         <div class="col-lg-12">
           <p class="header">RECENTLY ADDED</p>
 
-          <?php for ($i=0; $i < $n ; $i++): ?>
-          <?php //foreach ($rows as $obj): ?>
+          <?php //for ($i=0; $i < $n ; $i++): ?>
+          <?php foreach ($rows as $obj): ?>
           <div class="ra-row animated fadein">
             <div class="row">
               <div class="col-lg-4 col-sm-12" style="/*background: red;*/">
@@ -319,8 +325,8 @@ $n = '2';
             </div>
             <hr class="rar-hr">
           </div>
-          <?php //endforeach; ?>
-          <?php  endfor; ?>
+          <?php endforeach; ?>
+          <?php  //endfor; ?>
         </div>
       </div>
     </div>

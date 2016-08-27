@@ -47,7 +47,8 @@
         </ul>
 
         <div class="sm-donate-button-header">
-          <button type="button" class="btn  navbar-nav btn-rhc"><b>DONATE</b></button>
+          <a href="http://www.ayalafoundation.org/donate/donate-2/" class="btn  navbar-nav btn-rhc" role="button"><b>DONATE</b></a>
+
           <div class="social-media">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="https://web.facebook.com/ayalafoundation"><i class="fa fa-facebook fa-lg white"></i></a></li>
@@ -94,7 +95,7 @@
         </ul>
       </div>
 
-      <button type="submit" class="btn  btn-rhc"><b>DONATE</b></button>
+      <a href="http://www.ayalafoundation.org/donate/donate-2/" class="btn btn-rhc" role="button"><b>DONATE</b></a>
       <!-- <br>
       <button id="btn-sub" class="btn  btn-rhc"><b>TEST SUBMENU</b></button> -->
       </div>

@@ -216,11 +216,9 @@
           <p><b>WHO WE ARE</b></p>
         </div>
         <ul class="nav f-nav-menu">
-          <li><a href="">About Ayala Foundation</a></li>
-          <li><a href="">Mission</a></li>
-          <li><a href="">Vision</a></li>
-          <li><a href="">Values</a></li>
-          <li><a href="">History</a></li>
+          <li><a href="http://www.ayalafoundation.org/news/faqs/">About Ayala Foundation</a></li>
+          <li><a href="http://www.ayalafoundation.org/vision-mission-values/">Mission Vision and Values</a></li>
+          <li><a href="http://www.ayalafoundation.org/history/">History</a></li>
         </ul>
       </div>
       <!-- what we do -->
@@ -229,21 +227,21 @@
           <p><b>WHAT WE DO</b></p>
         </div>
         <ul class="nav f-nav-menu">
-          <li><a href="">Latest News</a></li>
-          <li><a href="">Education</a></li>
-          <li><a href="">Youth Leadership</a></li>
-          <li><a href="">Sustainable Livelihood</a></li>
-          <li><a href="">Arts & Culture</a></li>
-          <li><a href="">Special Projects</a></li>
+          <li><a href="http://www.ayalafoundation.org/news/archive/">Latest News</a></li>
+          <li><a href="http://www.ayalafoundation.org/ourprograms/education-2/">Education</a></li>
+          <li><a href="http://www.ayalafoundation.org/ourprograms/youth-leadership-2/">Youth Leadership</a></li>
+          <li><a href="http://www.ayalafoundation.org/ourprograms/sustainable-livelihood-2/">Sustainable Livelihood</a></li>
+          <li><a href="http://www.ayalafoundation.org/ourprograms/arts-and-culture/">Arts & Culture</a></li>
+          <li><a href="http://www.ayalafoundation.org/ourprograms/special-project/">Special Projects</a></li>
         </ul>
       </div>
       <!-- what we are -->
       <div class="col-sm-6 col-md-3-5 col-lg-1-5">
         <div class="f-header">
-          <p><b>WHAT WE ARE</b></p>
+          <p><b>WHERE WE ARE</b></p>
         </div>
         <ul class="nav f-nav-menu">
-          <li><a href="">Location Map</a></li>
+          <li><a href="http://www.ayalafoundation.org/where-we-are/">Location Map</a></li>
         </ul>
       </div>
       <!-- get involoved -->
@@ -252,9 +250,9 @@
           <p><b>GET INVOLVED</b></p>
         </div>
         <ul class="nav f-nav-menu">
-          <li><a href="">Donate</a></li>
-          <li><a href="">Volunteer</a></li>
-          <li><a href="">Jobs</a></li>
+          <li><a href="http://www.ayalafoundation.org/donate/donate-2/">Donate</a></li>
+          <li><a href="http://www.ayalafoundation.org/donate/volunteer/">Volunteer</a></li>
+          <li><a href="http://www.ayalafoundation.org/careers/">Careers</a></li>
         </ul>
       </div>
       <!-- contact us -->
